@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Media Authenticity Scanner",
+    "version": "1.0",
+    "description": "Detects if images are authentic, edited, or synthetic.",
+    "permissions": ["activeTab"],
+    "host_permissions": [
+      "<all_urls>", 
+      "http://localhost:8000/*"
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Open Scanner"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["content-styles.css"],
+        "js": ["content.js"]
+      }
+    ]
+  }

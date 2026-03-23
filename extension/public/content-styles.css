@@ -1,0 +1,17 @@
+.media-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    z-index: 999999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    pointer-events: none; /* So it doesn't block clicking the image */
+}
+.badge-authentic { background-color: #28a745; }
+.badge-suspicious { background-color: #ffc107; color: black; }
+.badge-edited { background-color: #dc3545; }
