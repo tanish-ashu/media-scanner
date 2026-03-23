@@ -1,21 +1,14 @@
-                            ~ STRUTURE ~
-
 media-scanner/
 ├── backend/                  
-│   ├── main.py               (Code done: FastAPI mock endpoint)
+│   ├── main.py               (UPDATED: Now calls analyzer.py)
+│   ├── utils/                (NEW FOLDER)
+│   │   └── analyzer.py       (NEW CODE: Downloads images & checks EXIF data)
 │   └── venv/                 
 │
-└── extension/                
+└── extension/                (No changes needed here for this step)
     ├── public/               
-    │   ├── manifest.json     (Code done: V3 config pointing to React)
-    │   ├── background.js     (Code done: API fetcher)
-    │   ├── content.js        (Code done: Image detector & badge injector)
-    │   └── content-styles.css(Code done: Badge styling)
-    │
-    ├── src/                  
-    │   ├── App.jsx           (Code done: React Popup UI)
-    │   ├── main.jsx          (Created by Vite: renders App.jsx)
-    │   └── App.css           (Created by Vite: default styles)
-    │
-    ├── package.json          (Created by Vite: dependencies list)
-    └── vite.config.js        (Created by Vite: bundler config)
+    │   ├── manifest.json     
+    │   ├── background.js     
+    │   ├── content.js        
+    │   └── content-styles.css
+    └── src/
