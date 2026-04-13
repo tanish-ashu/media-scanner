@@ -18,3 +18,4 @@ async def analyze_image(req: ImageRequest):
         "confidence": analysis_result["confidence"],
         "reason": analysis_result["reason"]
     }
+    
